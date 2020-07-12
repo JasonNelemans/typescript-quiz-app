@@ -6,6 +6,13 @@ import QuestionCard from './components/QuestionCard'
 // Types
 import { QuestionState, Difficulty } from "./API";
 
+type answerObject = {
+  question: string;
+  answer: string;
+  correct: boolean;
+  correctAnswer: string;
+}
+
 const TOTAL_QUESTIONS = 10;
 
 function App() {
