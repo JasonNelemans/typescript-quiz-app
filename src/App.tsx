@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { fetchQuizQuestions } from './API';
 
 //Components 
@@ -59,6 +59,14 @@ function App() {
   }
 
   const nextQuestion = () => {
+    // Move on to the next question if not the last qustion
+    const nextQuestion = number + 1;
+
+    if (nextQuestion === TOTAL_QUESTIONS) {
+      setGameOver(true);
+    } else {
+      setNumber(nextQuestion);
+    }
 
   }
 
@@ -82,11 +90,12 @@ function App() {
           callback={checkAnswer}
         />
       )}
-      {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ? (
-        <button className="next" onClick={nextQuestion}>
-          Next Question
-        </button>
-      ) : null}
+      {!gameOver && !loading && userAnswers.length === number + 1 && number !== TOTAL_QUESTIONS - 1 ?
+        (
+          <button className="next" onClick={nextQuestion}>
+            Next Question
+          </button>
+        ) : null}
     </div>
   );
 }
