@@ -16,4 +16,6 @@ Further study these:
     -moz-text-fill-color: transparant;
 
 background: linear-gradient(180deg, #fff, #ffcc91); <<<----- manipulate this to get color scheme for CF logo. 
+
+Understand optional chaining ***? of TypeScript. 
 */
