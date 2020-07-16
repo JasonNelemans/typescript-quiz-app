@@ -14,5 +14,5 @@ Further study these:
     -moz-background-clip: text;
     -moz-text-fill-color: transparant;
 
-
+background: linear-gradient(180deg, #fff, #ffcc91); <<<----- manipulate this to get color scheme for CF logo. 
 */
