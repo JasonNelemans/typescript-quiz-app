@@ -4,4 +4,4 @@ Fun little Quiz app to further practice React with Styled Components and be intr
 
 ![startscreen](/src/images/startscreen.png)\
 ![pointscreen](/src/images/pointscreen.png)\
-![losescreen](/src/images/losescreen.png)\
+![losescreen](/src/images/losescreen.png)
